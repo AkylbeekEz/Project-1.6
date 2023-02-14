@@ -1,19 +1,21 @@
-.commercial {  
- &__message { 
+.commercial  {  
+ &__message {  
   font-size: 14px;
-  font-weight: 400;
-  letter-spacing: 0.2px;
+  font-weight: 400; 
+  line-height: 20px;
+  letter-spacing: 0.2px; 
   max-width: 421px;
   margin-bottom: 16px;
  }
- &__btn {
-  line-height: 1.5em;
-  &::after {
-   content: '';
+ &__btn {    
+  line-height: 24px; 
+  &::after {   
    position: absolute;
+   content: ''; 
    width: 24px;
    height: 24px;
    background: url('../img/commercial-icon.svg') no-repeat;
   }
  }
+ margin-bottom: 32px;
 }
