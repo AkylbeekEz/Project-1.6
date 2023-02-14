@@ -1,0 +1,47 @@
+.page-nav {
+ display: flex;
+ white-space: nowrap;
+ overflow: auto;
+ align-items: center;
+ row-gap: 7px; 
+
+ @media screen and (max-width: $tablet-max) {  
+  &::after {
+   content: '';
+   display: block;
+   position: absolute;
+   right: 0; 
+   width: 24px; 
+   height: 40px; 
+   background: #{$gradient};
+  }
+ }
+
+ &__item {
+  padding: 8px 16px;
+  border: 2px solid transparent;
+
+  &--active {
+   border-color: $border-color-active;
+   border-radius: 6px;
+   background: white;
+  }
+
+  &:hover {
+   opacity: 0.5;
+  }
+
+  @include desktop {
+   padding: 6px 22px;
+  }
+ }
+
+ @include desktop {
+  flex-wrap: wrap;
+ }
+
+ &__link {
+  color: $menu-text-color;
+  line-height: 1.5em;
+ }
+}

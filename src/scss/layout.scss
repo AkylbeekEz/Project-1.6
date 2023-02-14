@@ -1,0 +1,32 @@
+.layout {   
+ &__line {
+  position: relative;  
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+  &--right {
+   position: absolute;
+   right: 0;
+  }
+  &--separator::before {
+   content: "";
+   @include header-separator; 
+  } 
+ }
+ &__header { 
+  height: 82px;
+  &-logo {
+   @include mobile { 
+    &::before {
+     display: none;
+    }
+   }
+  }
+  &-tools {
+   @include mobile {
+    display: none;
+   } 
+  }
+ }  
+ &__main {}
+} 

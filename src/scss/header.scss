@@ -1,0 +1,21 @@
+.header { 
+ background: white; 
+ box-sizing: border-box;
+ @include desktop {
+  padding: 0 24px;
+ }
+ @include tablet {
+  padding: 0 24px;
+ } 
+ @include mobile {
+  padding: 0 16px;
+ }  
+ &__button {
+  display: block;   
+  width: 40px;
+  height: 40px;
+ }  
+ @include desktop {
+  display: none;
+ }
+} 

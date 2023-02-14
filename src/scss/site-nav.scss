@@ -1,0 +1,24 @@
+.site-nav {
+ display: flex;
+ flex-direction: column;
+ row-gap: 16px;
+
+ @include desktop {
+  row-gap: 24px;
+ }
+
+ &__item {
+  line-height: 32px;
+  &--active {
+   color: $menu-text-color;
+
+   ::before {
+    @include highlight(32px);
+   }
+  }
+
+  :hover {
+   opacity: 0.5;
+  }
+ }
+}

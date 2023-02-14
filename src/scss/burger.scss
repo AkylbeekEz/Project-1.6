@@ -1,0 +1,57 @@
+.burger-menu {
+ position: absolute;
+ left: 0;
+ top: 0;
+ width: 100%;
+ height: auto;
+ min-height: 100%; 
+ padding: 0 16px;
+ padding-bottom: 32px;
+ z-index: 3;
+ background-color: white;
+ box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2);
+
+ &--hidden {
+  display: none;
+ }
+
+ &__header {
+  display: flex;
+  align-items: center;
+ }
+
+ &__site-nav {
+  margin-top: 6px;
+  margin-bottom: 32px;
+  @include tablet {
+   margin-bottom: 240px;
+  }
+  @include desktop {
+   margin-bottom: 240px;
+  }
+ }
+
+ &__contacts {
+  margin-bottom: 7px;
+  @include tablet {
+   margin-bottom: 40px;
+  }
+  @include desktop {
+   margin-bottom: 40px; 
+  }
+ }
+
+ @media screen and (min-width: $tablet-min) {
+  width: 320px;
+  padding-left: 24px;
+  padding-right: 24px;
+ }
+
+ @include desktop {
+  &--hidden {
+   display: block;
+  }
+
+  box-shadow: none;
+ }
+}

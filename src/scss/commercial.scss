@@ -1,0 +1,19 @@
+.commercial {  
+ &__message { 
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+  max-width: 421px;
+  margin-bottom: 16px;
+ }
+ &__btn {
+  line-height: 1.5em;
+  &::after {
+   content: '';
+   position: absolute;
+   width: 24px;
+   height: 24px;
+   background: url('../img/commercial-icon.svg') no-repeat;
+  }
+ }
+}

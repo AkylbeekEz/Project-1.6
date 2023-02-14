@@ -1,18 +1,116 @@
-@import "mixins";
-@import "fonts";
+@import "mixins/breakpoint";
+@import "mixins/header-separator";
+
+@import "mixins/active-highlight";
+
 @import "vendor";
 @import "vars";
 @import "settings";
+@import "fonts"; 
+@import './btn.scss';
+@import './layout.scss';
+@import './site-nav.scss';
+@import './page-nav.scss';
+@import './contacts.scss';
+@import './modal.scss';
+@import './form.scss';
+@import './logo.scss';
+@import './header.scss';
+@import './lang-switcher.scss';
+@import './container.scss';
+@import './burger.scss';
+@import './btn.scss';
+@import './article.scss';
+@import './swiper.scss';
+@import './content-block.scss';
+@import './card.scss';
+@import './footer.scss';
+@import './service-card.scss';
+@import './commercial.scss';
 
 
-.header {
-  text-align: center;
-  & img {
-    width: 30%;
-  }
+body {
+  position: relative;
+  font-family: 'TT Lakes';
+  max-width: 1440px;
+  margin-left: auto;
+  background-color: whiTe;
+  margin-right: auto;
+  color: $main-text-color;
+  letter-spacing: -0.2px;
+  font-weight: 500;
 }
 
-.welcome-title {
-  margin-top: 50px;
-  font-size: 6em;
+.main {
+  background-color: $background;
+  border-top: 1px solid $border-color-active;
+
+  @include desktop {
+    position: relative;
+    left: 320px;
+    width: calc(100% - 320px);
+  }
+
+  &__repair,
+  &__status {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+
+    @media screen and (max-width: 1367px) {
+      display: none;
+    }
+  }
+
+  &__title {
+    font-size: 28px;
+    line-height: 40px;
+    font-weight: bold;
+
+    &::before {
+      @include highlight (40px);
+    } 
+  }
+
+  &__header {
+    padding: 0 16px;
+    padding-top: 24px; 
+    @include tablet {
+      padding: 0 24px; 
+      padding-top: 24px;
+    }
+    @include desktop {
+      padding: 0 32px;
+      padding-top: 42px;
+    } 
+  }
+
+  &__nav {
+    padding: 0 16px;
+    margin-top: 24px;
+    @include tablet {
+      padding: 0 24px;
+      margin-top: 32px;
+    }
+    @include desktop {
+      padding: 0 32px;
+      margin-top: 8px;
+    }
+  }
+
+  &__article {
+    padding: 0 16px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    @include tablet {
+      padding: 0 24px;
+      margin-top: 32px;
+      margin-bottom: 32px;
+    }
+    @include desktop { 
+      padding: 0 32px;
+      margin-top: 10px;
+      margin-bottom: 32px;
+    }
+  }
 }

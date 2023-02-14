@@ -1,0 +1,9 @@
+.lang-switcher {
+ display: flex;
+ &__item {  
+  margin-right: 7px;
+  &--active {
+   color: $menu-text-color;
+  }
+ } 
+}

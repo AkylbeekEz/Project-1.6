@@ -1,0 +1,44 @@
+.footer { 
+ padding: 16px; 
+ border-top: 1px solid $border-color-active;
+ @include tablet {
+  padding: 24px;
+  padding-top: 32px;
+ }
+ @include desktop {
+  padding: 32px;
+  padding-bottom: 24px;
+ }
+
+ &__content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  align-items: center;
+  font-size: 14px;
+  line-height: 16px;
+  color: $menu-text-color;
+  @media screen and (min-width: $tablet-min) {
+   flex-direction: row;  
+   align-items: flex-start;
+  }
+ }
+ &__copyright { 
+  text-align: center;
+  min-width: 33%;
+  @media screen and (min-width: $tablet-min) {
+   text-align: left; 
+  }
+ }
+ &__politics {
+  text-align: center;
+  min-width: 33%;
+ }   
+ &__notice { 
+  text-align: center;
+  @media screen and (min-width: $tablet-min) {
+   text-align: right;
+   min-width: 34%;
+  }
+ }
+}

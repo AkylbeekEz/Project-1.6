@@ -1,12 +1,5 @@
 @charset "UTF-8";
-@import "~normalize.css";
-@font-face {
-  font-family: "notosans";
-  src: url("../fonts/notosans.woff2") format("woff2");
-  font-weight: 400;
-  font-display: swap;
-  font-style: normal;
-}
+@import "~normalize.css"; 
 /* Цвет таблицы */
 /* Цвет граней */
 /* Цвет элементов заголовка */
@@ -28,8 +21,7 @@ body {
   overflow-anchor: none;
   margin: 0;
   font-family: "Barlow", sans-serif;
-  color: #1B1C21;
-  background-color: #F8F8F8;
+  color: #1B1C21; 
   scroll-behavior: smooth;
 }
 
@@ -100,25 +92,6 @@ footer {
 
 .error {
   border: 2px var(--error-red) solid !important;
-}
-
-.container {
-  max-width: 1810px;
-  margin: 0 auto;
-  padding-right: 20px;
-  padding-left: 20px;
-}
-@media (max-width: 1200px) {
-  .container {
-    padding-right: 50px;
-    padding-left: 50px;
-  }
-}
-@media (max-width: 576px) {
-  .container {
-    padding-right: 15px;
-    padding-left: 15px;
-  }
-}
+} 
 
 /*# sourceMappingURL=main.css.map */

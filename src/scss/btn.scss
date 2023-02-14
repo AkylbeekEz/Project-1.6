@@ -1,0 +1,96 @@
+.btn {
+ padding: 0;
+ border: none;
+ cursor: pointer;
+ display: block;
+ background: none;
+
+ &:hover {
+  opacity: 0.5;
+ }
+
+ &-burger {
+  width: 40px;
+  height: 40px;
+  background-image: url('../img/burger.svg');
+
+  &--active {
+   background-image: url('../img/hide.svg');
+  }
+
+  @media screen and (min-width: 1368px) {
+   display: none;
+  }
+ }
+
+ &-feedback {
+  width: 40px;
+  height: 40px;
+  background-image: url('../img/feedback.svg');
+
+  &--active {
+   background-image: url('../img/hide.svg');
+  }
+ }
+
+ &-call {
+  width: 40px;
+  height: 40px;
+  background-image: url('../img/call.svg');
+
+  &--active {
+   background-image: url('../img/hide.svg');
+  }
+ }
+
+ &-profile {
+  width: 40px;
+  height: 40px;
+  background-image: url('../img/profile.svg');
+
+  &--active {
+   background-image: url('../img/hide.svg');
+  }
+ }
+
+ &-search {
+  width: 40px;
+  height: 40px;
+  background-image: url('../img/search.svg');
+
+  &--active {
+   background-image: url('../img/hide.svg');
+  }
+ }
+
+ &-repair {
+  width: 40px;
+  height: 40px;
+  background-image: url('../img/repair.svg');
+
+  &--active {
+   background-image: url('../img/hide.svg');
+  }
+ }
+
+ &-status {
+  width: 40px;
+  height: 40px;
+  background-image: url('../img/status.svg');
+
+  &--active {
+   background-image: url('../img/hide.svg');
+  }
+ }
+ &__popup-icon { 
+  display: inline-block;
+  width: 8px;
+  height: 11px;
+  margin-right: 16px;
+  background: url('../img/popup.svg') no-repeat;
+  
+  &--inverse { 
+   background: url('../img/popup-inverse.svg') no-repeat;
+  } 
+ }
+} 

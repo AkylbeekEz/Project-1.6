@@ -1,0 +1,52 @@
+.form {
+ width: 100%;
+
+ &__info {
+  color: $menu-text-color;
+  font-size: 14px;
+  margin-bottom: 16px;
+ }
+
+ &__important {
+  color: $important;
+ }
+
+ &__text {
+  font-weight: 500;
+  padding: 12px 16px;
+  margin-bottom: 16px;
+  border: 1px solid #eaeaea;
+
+  &::placeholder {
+   color: #b5b6bc;
+  }
+
+  border-radius: 8px;
+
+  &--size {
+   &--fat {
+    height: 118px;
+   }
+  }
+ }
+
+ &__submit {
+  width: 136px;
+  box-sizing: border-box;
+  font-size: 12px;
+  padding: 4px 18px;
+  padding-left: 20px;
+  height: 32px;
+  font-weight: 700;
+  border-radius: 16px;
+  color: white;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  background-image: url('../img/submit.svg');
+  background-color: #ff3e79;
+  background-origin: content-box;
+  background-repeat: no-repeat;
+  background-position: right;
+ }
+}

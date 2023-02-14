@@ -1,0 +1,73 @@
+.modal {
+ position: absolute;
+ box-sizing: border-box;
+ right: 0;
+ top: 0;
+ z-index: 5;
+ width: 100%;
+ height: auto;
+ min-height: 100%;
+ background-color: white;
+ padding: 24px 16px;
+ border-left: 1px solid $modal-border-color; 
+ 
+ &__title {
+  margin-bottom: 24px;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: -0.6px;
+  line-height: 40px;
+
+  &::before {
+   @include highlight(40px);
+  }
+ }
+
+ &__close { 
+  margin-bottom: 32px;
+  @media screen and (min-width: $tablet-min) {
+   position: absolute;
+   margin-bottom: 0;
+   left: -72px;
+  } 
+ }
+
+ &--hidden {
+  display: none;
+ }
+
+ &__submit {
+  position: relative;
+  text-align: right;
+ } 
+
+ @media screen and (min-width: $tablet-min) { 
+  width: 440px;
+  padding: 32px;
+ }
+ 
+}
+
+.tuman { 
+ position: absolute;
+ left: 0;
+ top: 0;
+ width: 100%; 
+ height: auto;
+ min-height: 100%; 
+ background-color: white;
+ opacity: 0.96;
+ z-index: -1;
+
+ &--modal { 
+  z-index: 4;
+ }
+ &--burger {
+  z-index: 2;
+ }
+
+ &--hidden {
+  display: none;
+ }
+  
+}

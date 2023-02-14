@@ -1,0 +1,96 @@
+.service-card {
+ box-sizing: border-box;
+ width: 260px;
+ padding: 16px;
+ height: auto;
+ row-gap: 16px; 
+ border-radius: 6px;
+ background-color: white;
+
+ &__label {
+  line-height: 20px;
+  color: $menu-text-color;
+  @media screen and (min-width: $tablet-min) {
+   display: none;
+  }
+ } 
+
+ &__item { 
+  font-size: 14px;
+  line-height: 18px;
+  text-align: left;
+  margin-bottom: 16px;
+ 
+  @media screen and (min-width: $tablet-min) {
+   display: table-cell; 
+   padding: 16px;
+   @media screen and (min-width: $desktop-min) {
+    padding: 16px 24px;
+   }
+   margin-bottom: 0px; 
+   &:last-child { 
+    text-align: right;
+   }
+   &--border-radius {
+    &-bottom {
+     &-left {
+      border-bottom-left-radius: 6px;
+     }
+     &-right {
+      border-bottom-right-radius: 6px;
+     }
+    }
+    &-top {
+     &-left {
+      border-top-left-radius: 6px;
+     }
+     &-right {
+      border-top-right-radius: 6px;
+     }
+    }
+   }
+  }  
+
+  &--color--label {
+   color: $menu-text-color;
+  }
+ }
+
+ &__wrap-padding { 
+  @media screen and (min-width: $tablet-min) { 
+   display: inline-block;
+  }
+  position: relative; 
+ }
+
+ &__order {
+  position: absolute; 
+  right: 0;
+  bottom: 0;
+  color: white;
+  text-align: left;
+  padding: 4px 12px;
+  line-height: 2em;
+  font-size: 12px;
+  font-weight: bold;
+  width: 120px;
+  border-radius: 16px;
+  background: url("../img/submit.svg") no-repeat #ff3e79;
+  background-position: calc(100% - 16px);
+  @media screen and (min-width: $tablet-min) {
+   position: static; 
+  }
+ }
+
+ @media screen and (min-width: $tablet-min) {
+  display: table-row; 
+  background: linear-gradient($card-border-color, $card-border-color) bottom center/calc(100% - 32px) 1px;
+  background-repeat: no-repeat; 
+  &:last-child {
+   background: none;
+   background-color: white; 
+   border-bottom-right-radius: 6px;
+  } 
+  background-color: white;
+ }
+}

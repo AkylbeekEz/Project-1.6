@@ -1,0 +1,10 @@
+@mixin highlight($height) { 
+ content: ""; 
+ position: absolute;
+ left: -2px;
+ display: block;  
+ width: 4px;
+ height: $height;
+ border-radius: 2px;   
+ background-color: #41F6D7;
+}
