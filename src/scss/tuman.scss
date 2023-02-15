@@ -1,0 +1,26 @@
+.tuman { 
+ position: absolute;
+ left: 0;
+ top: 0;
+ width: 100%; 
+ height: auto;
+ min-height: 100%; 
+ background-color: white;
+ opacity: 0.96;
+ z-index: -1;
+
+ &--feedback { 
+  z-index: 4;
+ }
+ &--call { 
+  z-index: 4;
+ }
+ &--burger {
+  z-index: 2;
+ }
+
+ &--hidden {
+  display: none;
+ }
+  
+}
